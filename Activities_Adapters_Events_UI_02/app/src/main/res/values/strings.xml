@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Activities_Adapters_Events_UI_02</string>
+    <string name="app_label">Name collector</string>
+    <string name="et_hint">Write something &#8230;</string>
+    <string name="tv_counter">Names added: 0</string>
+    <string name="btn_adder">ADD NAME</string>
+    <string name="btn_details">SEE DETAILS</string>
+</resources>
