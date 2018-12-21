@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Navigation And Fragments</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="et_new_book_hint">NewBookTitle 0001</string>
+    <string name="navigation">Navigation</string>
+    <string name="btn_rename">Rename</string>
+    <string name="tv_book_name">Book name:</string>
+    <string name="tv_book_isbn">Book ISBN:</string>
+    <string name="et_book_name_example">First Book</string>
+    <string name="et_book_isbn_example">0001</string>
+    <string name="btn_add_book">Add book</string>
+</resources>

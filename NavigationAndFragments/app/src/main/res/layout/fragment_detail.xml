@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment"
+    android:layout_marginTop="55dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_detail_book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            style="@style/coolerText"/>
+        <EditText
+            android:id="@+id/et_new_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@id/tv_detail_book_name"
+            android:hint="@string/et_new_book_hint"
+            android:inputType="text" />
+
+
+        <Button
+            android:id="@+id/btn_rename_book"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/et_new_book"
+            android:layout_alignBaseline="@id/et_new_book"
+            android:text="@string/btn_rename"
+            style="@style/Base.Widget.AppCompat.Button.Colored"/>
+    </RelativeLayout>
+
+</FrameLayout>
