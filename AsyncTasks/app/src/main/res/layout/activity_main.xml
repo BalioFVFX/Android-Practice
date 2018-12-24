@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_find_player"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="10dp"
+        android:hint="@string/et_player_username"/>
+
+
+    <Button
+        android:id="@+id/btn_find_player"
+        style="@style/Base.Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_toEndOf="@id/et_find_player"
+        android:layout_alignBaseline="@id/et_find_player"
+        android:text="@string/btn_find_player"/>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_find_player"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/tv_no_info"/>
+
+    <TextView
+        android:id="@+id/tv_plat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/tv_no_info"/>
+
+    <TextView
+        android:id="@+id/tv_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_plat"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:text="@string/tv_no_info"/>
+
+    <CheckBox
+        android:id="@+id/chb_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_toEndOf="@id/tv_name"
+        android:layout_alignBaseline="@id/tv_name"/>
+
+    <CheckBox
+        android:id="@+id/chb_game"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_toEndOf="@id/tv_plat"
+        android:layout_alignBaseline="@id/tv_plat"/>
+
+    <CheckBox
+        android:id="@+id/chb_platform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:layout_toEndOf="@id/tv_game"
+        android:layout_alignBaseline="@id/tv_game"/>
+
+    <ProgressBar
+        android:id="@+id/progress_load"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/tv_name"
+        android:layout_toEndOf="@id/chb_game"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
